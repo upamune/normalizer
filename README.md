@@ -9,6 +9,13 @@ Input file loudness: -37.5792848899898
 Output file loudness: -26.049041612979114
 ```
 
+
+### Web
+
+```bash
+$ pdm run normalizer-web
+```
+
 ## Check Loudness
 
 ```bash

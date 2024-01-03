@@ -9,6 +9,7 @@ dependencies = [
     "pyloudnorm>=0.1.1",
     "fire>=0.5.0",
     "soundfile>=0.12.1",
+    "streamlit>=1.29.0",
 ]
 requires-python = "==3.11.*"
 readme = "README.md"
@@ -20,3 +21,4 @@ package-type = "application"
 
 [tool.pdm.scripts]
 normalizer.cmd = "python src/normalizer/main.py"
+normalizer-web.cmd = "streamlit run src/normalizer/main.py -- --web"
