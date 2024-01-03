@@ -1,0 +1,22 @@
+[project]
+name = "normalizer"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Yu SERIZAWA", email = "upamune@gmail.com"},
+]
+dependencies = [
+    "pyloudnorm>=0.1.1",
+    "fire>=0.5.0",
+    "soundfile>=0.12.1",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+package-type = "application"
+
+[tool.pdm.scripts]
+normalizer.cmd = "python src/normalizer/main.py"
