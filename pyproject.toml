@@ -22,3 +22,4 @@ package-type = "application"
 [tool.pdm.scripts]
 normalizer.cmd = "python src/normalizer/cli.py"
 normalizer-web.cmd = "streamlit run src/normalizer/streamlit.py"
+export.cmd = "pdm export -o requirements.txt --without-hashes"
