@@ -1,24 +1,26 @@
 # normalizer
 
+![logo](https://i.gyazo.com/35ca0a892531037c9655c8e382ab50bc.png)
 
 ## Normalize
 
 ```bash
-$ pdm run normalizer --input_file ./input.wav --lufs -26.0 --output_file normalized.wav
+$ pdm run cli --input_file ./input.wav --lufs -26.0 --output_file normalized.wav
 Input file loudness: -37.5792848899898
 Output file loudness: -26.049041612979114
 ```
 
-
 ### Web
 
 ```bash
-$ pdm run normalizer-web
+$ pdm run web
 ```
+
+![screenshot](https://i.gyazo.com/3dfc9af82613d71bb95aaa4174d13a7b.jpg)
 
 ## Check Loudness
 
 ```bash
-$ pdm run normalizer --input_file ./input.wav --skip_normalize
+$ pdm run cli --input_file ./input.wav --skip_normalize
 Input file loudness: -37.5792848899898
 ```
