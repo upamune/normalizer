@@ -1,6 +1,6 @@
 # normalizer
 
-![logo](https://i.gyazo.com/35ca0a892531037c9655c8e382ab50bc.png)
+<img src="https://i.gyazo.com/35ca0a892531037c9655c8e382ab50bc.png" width="300px">
 
 ## Normalize
 
