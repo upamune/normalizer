@@ -20,5 +20,5 @@ license = {text = "MIT"}
 package-type = "application"
 
 [tool.pdm.scripts]
-normalizer.cmd = "python src/normalizer/main.py"
-normalizer-web.cmd = "streamlit run src/normalizer/main.py -- --web"
+normalizer.cmd = "python src/normalizer/cli.py"
+normalizer-web.cmd = "streamlit run src/normalizer/streamlit.py"
