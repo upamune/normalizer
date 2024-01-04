@@ -1,6 +1,6 @@
-# normalizer
+# lufs-normalizer
 
-<img src="https://i.gyazo.com/35ca0a892531037c9655c8e382ab50bc.png" width="300px">
+<img src="https://i.gyazo.com/67b647636efc29fe2d469da6c7b62f2c.png" width="700px">
 
 ## Normalize
 
