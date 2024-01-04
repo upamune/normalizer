@@ -2,7 +2,6 @@ import io
 import normalizer
 import numpy as np
 
-
 def run_with_web():
   import streamlit as st
   st.title("WAV normalizer")
