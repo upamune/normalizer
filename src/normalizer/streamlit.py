@@ -27,13 +27,18 @@ def run_with_web():
 
       st.text(f"Input file loudness: {result.input_loudness}")
       st.text(f"Output file loudness: {result.output_loudness}")
-      st.audio(result.loudness_normalized_audio, format='audio/wav', sample_rate=result.rate)
+
+      try:
+        st.audio(result.loudness_normalized_audio, format='audio/wav', sample_rate=result.rate)
+      except Exception as e:
+        st.write(f":red[オーディオプレイヤーが表示できませんでした({e})]")
 
       # audioファイルをdonwload_buttonで利用できるように変換する
       buffer = io.BytesIO()
       np.save(buffer, result.loudness_normalized_audio)
       buffer.seek(0)
 
+      # bug: WAVをダウンロードしたタイミングでファイルがおかしくなるバグがある
       st.download_button(
         label=f"Download {result.output_file}",
         data=buffer,
