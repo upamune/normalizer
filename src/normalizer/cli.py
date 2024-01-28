@@ -12,5 +12,8 @@ def run_with_cli(input_file, output_file="", lufs=-26, filter_class="K-weighting
   sf.write(file=result.output_file, data=result.loudness_normalized_audio, samplerate=result.rate)
   print("Output file:", result.output_file)
 
-if __name__ == '__main__':
+def main():
   fire.Fire(run_with_cli)
+
+if __name__ == '__main__':
+  main()

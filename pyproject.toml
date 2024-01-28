@@ -1,7 +1,7 @@
 [project]
-name = "normalizer"
+name = "lufs-normalizer"
 version = "0.1.0"
-description = "Default template for PDM package"
+description = "lufs audio normalizer"
 authors = [
     {name = "Yu SERIZAWA", email = "upamune@gmail.com"},
 ]
@@ -15,6 +15,12 @@ requires-python = "==3.11.*"
 readme = "README.md"
 license = {text = "MIT"}
 
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[project.scripts]
+lufs-normalizer = "normalizer.cli:main"
 
 [tool.pdm]
 package-type = "application"
